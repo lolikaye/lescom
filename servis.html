@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Лескомплект</title>
+  <link rel="stylesheet" href="styleservis.css">
+
+</head>
+<body>
+  <header>
+    <div id="logo" onclick="slowScroll('#top')">
+      <span>Лескомплект</span>
+    </div>
+    <div id="about">
+      <a href="info.html" onclick="slowScroll('#main')" title="О нас">О нас</a>
+      <a href="servis.html" onclick="slowScroll('#')" title="Услуги">Услуги</a>
+      <a href="contacts.html" onclick="slowScroll('#')" title="Контакты">Контакты</a>
+    </div>
+  </header>
+
+  <div id="top">
+      <!-- Основной блок слайдера -->
+      <div class="slider">
+
+  <!-- Первый слайд -->
+       <div class="item">
+    <img src="imgonline-com-ua-Resize-XZN7HkyvytGH1JEj.png">
+         </div>
+
+  <!-- Второй слайд -->
+  <div class="item">
+    <img src="imgonline-com-ua-Resize-X8Zeu7dYWeZ3NVk.png">
+  </div>
+
+  <!-- Третий слайд -->
+  <div class="item">
+    <img src="imgonline-com-ua-Resize-tWJ0DvL5QgRm.png">
+  </div>
+
+  <!-- Кнопки-стрелочки -->
+  <a class="previous" onclick="previousSlide()">&#10094;</a>
+  <a class="next" onclick="nextSlide()">&#10095;</a>
+  <script src="script.js"></script>
+</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Лескомплект</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div id="logo" onclick="slowScroll('#top')">
+      <span>Лескомплект</span>
+    </div>
+    <div id="about">
+      <a href="info.html" onclick="slowScroll('#main')" title="О нас">О нас</a>
+      <a href="servis.html" onclick="slowScroll('#')" title="Услуги">Услуги</a>
+      <a href="#" onclick="slowScroll('#')" title="Контакты">Контакты</a>
+    </div>
+  </header>
+
+  <div id="top">
+    <h1>Лескомплект</h1>
+    <h3>Качественный лесозаготовительный продукт</h3>
+  </div>
+
+  <div id="main">
+    <div class="intro">
+      <h2>Наша компания была основана в 2014 году</h2>
+      <span>С целью аренды лесов</span>
+    </div>
+    <div class="text">
+      <span>Мы заготовливаем древесину, так-же занимаемся погрузкой, лесовосстановлением и защитой лесов.</span>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    function slowScroll(id) {
+      $('html, body').animate({
+        scrollTop: $(id).offset().top
+      }, 500);
+    }
+
+    $(document).on("scroll", function () {
+      if($(window).scrollTop() === 0)
+        $("header").removeClass("fixed");
+      else
+        $("header").attr("class", "fixed");
+    });
+  </script>
+</body>
+</html>
